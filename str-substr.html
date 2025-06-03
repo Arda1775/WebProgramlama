@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+	    var cumle="My name is Deniz Arda ";
+		var result = cumle.substring(15,10);
+		// substring:(start,end)
+		//belirtilen indexler arasındaki değerleri alır
+		document.write(result+"<br/>");
+		var result2 = cumle.substr(8,4);
+		//substr:(start,length)
+		//başlangıç indexinden başlayarak
+		//belirtilen sayıda karakter alır
+		document.write(result2+"<br/>");
+		var result3 = cumle.includes("is");
+		// Belirtilen değeri
+		document.write(result3+"<br/>");
+		
+		var result4 = cumle.search(/deniz/i);//("Deniz") diye aranıyor (/deniz/i) yaparsak büyük küçük harfe bakmadan arıyor
+		document.write(result4+"<br/>");
+		
+		var result5 = cumle.repeat(10);
+		document.write(result5+"<br/>");
+		
+		var result6 = cumle.replace("Evin Dağ","Deniz Arda");
+		document.write(result6+"<br/>");
+		
+		var result7 =cumle.link("youtube.com");
+		document.write(result7+"<br/>")
+		
+		var result8 = cumle.startsWith("j");
+		document.write(result8+"<br/>");
+		
+		var result9 = cumle.endsWith("a");
+		document.write(result9+"<br/>");
+		
+		var result10 = cumle.toUpperCase();
+		document.write(result10+"<br/>");
+		
+		var result11 = cumle.toLowerCase();
+		document.write(result11+"<br/>");
+    </script>
+</body>
+</html>

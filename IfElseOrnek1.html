@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sınıf Seçiciler</title>
+</head>
+<body>
+<div style="background-color:gray;">
+<form>
+    Web sayfasını <b>koyu</b> modda kullanmak ister misiniz?<br>
+	<input type="radio" name="mod" id="evet">Evet<br>
+	<input type="radio" name="mod" id="hayır">Hayır<br>
+	<input type="button" value="Mod Ayarla" onclick="modDegis()">
+    </form>
+</div>
+<script>
+    function modDegis(){
+	if(document.getElementById("evet").checked==true){
+	document.getElementsByTagName("body")[0].style.backgroundColor="black";
+	document.getElementsByTagName("body")[0].style.Color="white";
+	}
+	else{
+	document.getElementsByTagName("body")[0].style.backgroundColor="white";
+	document.getElementsByTagName("body")[0].style.Color="black";
+	}
+}
+</script>
+</body>
+</html>
