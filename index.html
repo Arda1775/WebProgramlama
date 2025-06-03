@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="En">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY Turizm</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: sans-serif;
+            background: rgb(208, 255, 219);
+            background: linear-gradient(90deg, rgba(208, 255, 219, 1) 30%, rgba(175, 180, 255, 1) 90%, rgba(175, 180, 255, 1) 91%);
+        }
+
+        .navbar {
+            border-radius: 5px;
+            box-shadow: 2px 5px 8px rgb(85, 85, 85);
+            background-color: rgba(0, 159, 127, 0.467);
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .anadiv {
+            display: flex;
+            justify-content: center;
+            text-align: left;
+        }
+
+        ul {
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            list-style-type: none;
+            transition: 0.5s ease;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            font-size: 25px;
+            position: relative;
+            top: 8px;
+        }
+
+        .resim img {
+            width: 80px;
+            margin-right: 1200px;
+
+        }
+        #ilet{
+            border: none;
+            margin-right: 10px;
+            background-color: rgba(18, 109, 0, 0);
+            border-radius: 5px;
+            padding: 10px;
+            filter: blur(1px);
+        }
+
+        #ilet:hover {
+            background-color: rgba(87, 69, 252, 0.242);
+            transition: 0.3s ease;
+            filter: blur(0);
+        }
+        #favori {
+            border: none;
+            background-color: rgba(18, 109, 0, 0);
+            border-radius: 5px;
+            padding: 10px;
+            filter: blur(1px);
+        }
+
+        #favori:hover {
+            background-color: rgba(87, 69, 252, 0.242);
+            transition: 0.3s ease;
+            filter: blur(0);
+        }
+
+        #dil {
+            border: none;
+            background-color: rgba(247, 254, 123, 0);
+            border-radius: 5px;
+            padding: 10px;
+            filter: blur(1px);
+        }
+
+        #dil:hover {
+            background-color: rgba(87, 69, 252, 0.242);
+            transition: 0.3s ease;
+            filter: blur(0);
+        }
+
+        #giriskayit {
+            border: none;
+            background-color: rgba(247, 254, 123, 0);
+            border-radius: 5px;
+            padding: 10px;
+            filter: blur(1px);
+
+        }
+
+        #giriskayit:hover {
+            background-color: rgba(87, 69, 252, 0.242);
+            transition: 0.3s ease;
+            filter: blur(0);
+        }
+
+        .card {
+            width: 250px;
+            border-radius: 5px;
+            margin-left: 15px;
+            font-family: sans-serif;
+            font-weight: bold;
+            background-color: rgb(255, 255, 255);
+            transform-style: preserve-3d;
+            border: 2px solid rgb(0, 0, 0);
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 2px 4px 10px rgba(0, 1, 1);
+            transition: 0.3s ease;
+            background: rgb(208, 255, 219);
+            background: linear-gradient(90deg, rgb(208, 255, 219));
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+            transform: scale(1.1);
+        }
+
+        #Otel {
+            width: 250px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 5px;
+
+        }
+
+        #paragraf {
+            padding: 20px;
+            margin-right: 2px;
+            margin-bottom: 3px;
+            margin-left: -5;
+            margin-top: 3px;
+        }
+
+        #paragraf a:hover {
+            cursor: pointer;
+        }
+
+
+
+        footer {
+            position: relative;
+            background-color: rgba(63, 63, 63, 0.877);
+            padding-top: 100px;
+            text-align: center;
+            justify-content: center;
+            font-family: sans-serif;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            font-family: sans-serif;
+            font-weight: bold;
+            margin-left: -8px;
+            margin-right: -8px;
+            margin-bottom: -10px;
+        }
+
+        footer p {
+            position: relative;
+            right: 560px;
+            font-size: large;
+        }
+        #phone{
+            position: relative;
+            right: 860px;
+            font-size: large;
+            top: -25px;
+        }
+        #sirket{
+            position: relative;
+            right: 1080px;
+            font-size: large;
+            top:-50px;
+        }
+
+        #card2:hover {
+            background: linear-gradient(90deg, rgb(208, 255, 219)0%, rgb(223, 248, 215) 0%, rgba(255, 255, 255, 1) 100%);
+        }
+
+        #card3:hover {
+            background: linear-gradient(90deg, rgb(227, 228, 252) 0%, rgba(240, 252, 232, 0.855) 0%, rgb(219, 221, 252) 100%);
+        }
+
+        #card4:hover {
+            background: linear-gradient(90deg, rgba(175, 180, 255, 1) 0%, rgba(231, 233, 255, 1) 0%, rgba(175, 180, 255, 1) 100%);
+        }
+
+        #card5:hover {
+            background: linear-gradient(90deg, rgba(175, 180, 255, 1) 0%, rgba(175, 180, 255, 1) 0%, rgba(175, 180, 255, 1) 100%);
+        }
+
+        #baslik {
+            text-align: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            font-size: 26px;
+            padding: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border: none;
+            width: 500px;
+            position: relative;
+            left: 700px;
+            border-radius: 5px;
+        }
+
+        #baslik:hover {
+            transition: 1s ease;
+            transform: rotateX(360deg);
+
+        }
+
+        .dil {
+            border: none;
+            background-color: rgba(247, 254, 123, 0);
+            border-radius: 5px;
+            padding: 10px;
+            filter: blur(1px);
+        }
+
+        .dil:hover {
+            filter: blur(0px);
+            transition: 0.3s ease;
+
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+
+        }
+
+        .dil-icerik {
+            display: none;
+            position: absolute;
+            background-color: rgba(0, 159, 127, 0.467);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 10px;
+            top: 45px;
+            padding-bottom: 8.3px;
+
+        }
+
+        .dil-icerik a {
+            color: rgb(255, 255, 255);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dil-icerik a:hover {
+            background-color: #7a7a7a;
+            border-radius: 5px;
+            transition: 0.3s ease;
+        }
+
+        .dropdown:hover .dil-icerik {
+            display: block;
+        }
+
+        .dropdown:hover .dil {
+            background-color: rgba(87, 69, 252, 0.242);
+            ;
+        }
+
+
+
+
+        #baslik2 {
+            text-align: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            font-size: 26px;
+            padding: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border: none;
+            width: 500px;
+            position: relative;
+            left: 700px;
+            border-radius: 5px;
+        }
+
+        #baslik2:hover {
+            transition: 1s ease;
+            transform: rotateX(360deg);
+        }
+
+        .butonlar {
+            margin-left: 240px;
+        }
+
+        #Antalya {
+            padding: 20px;
+            margin-right: 20px;
+            background-color: transparent;
+            border: none;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            color: rgb(97, 97, 97);
+            font-weight: bold;
+            font-size: medium;
+        }
+
+        #Antalya:hover {
+            transition: 0.5s ease;
+            transform: scale(1.2);
+        }
+
+        #Ankara {
+            padding: 20px;
+            margin-right: 20px;
+            background-color: transparent;
+            border: none;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            color: rgb(97, 97, 97);
+            font-weight: bold;
+            font-size: medium;
+        }
+
+        #Ankara:hover {
+            transition: 0.5s ease;
+            transform: scale(1.2);
+        }
+
+        #Muğla {
+            padding: 20px;
+            margin-right: 20px;
+            background-color: transparent;
+            border: none;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            color: rgb(97, 97, 97);
+            font-weight: bold;
+            font-size: medium;
+        }
+
+        #Muğla:hover {
+            transition: 0.5s ease;
+            transform: scale(1.2);
+        }
+
+        #Bursa {
+            padding: 20px;
+            margin-right: 20px;
+            background-color: transparent;
+            border: none;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            color: rgb(97, 97, 97);
+            font-weight: bold;
+            font-size: medium;
+        }
+
+        #Bursa:hover {
+            transition: 0.5s ease;
+            transform: scale(1.2);
+        }
+
+        #Eskişehir {
+            padding: 20px;
+            margin-right: 20px;
+            background-color: transparent;
+            border: none;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            color: rgb(97, 97, 97);
+            font-weight: bold;
+            font-size: medium;
+        }
+
+        #Eskişehir:hover {
+            transition: 0.5s ease;
+            transform: scale(1.2);
+        }
+
+        #İzmir {
+            padding: 20px;
+            margin-right: 20px;
+            background-color: transparent;
+            border: none;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            color: rgb(97, 97, 97);
+            font-weight: bold;
+            font-size: medium;
+        }
+
+        #İzmir:hover {
+            transition: 0.5s ease;
+            transform: scale(1.2);
+        }
+
+        #Trabzon {
+            padding: 20px;
+            margin-right: 20px;
+            background-color: transparent;
+            border: none;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            color: rgb(97, 97, 97);
+            font-weight: bold;
+            font-size: medium;
+        }
+
+        #Trabzon:hover {
+            transition: 0.5s ease;
+            transform: scale(1.2);
+        }
+
+        #İstanbul {
+            padding: 20px;
+            margin-right: 20px;
+            background-color: transparent;
+            border: none;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            color: rgb(97, 97, 97);
+            font-weight: bold;
+            font-size: medium;
+        }
+
+        #İstanbul:hover {
+            transition: 0.5s ease;
+            transform: scale(1.2);
+        }
+
+        .ana-icerik1 {
+            display: flex;
+            justify-content: center;
+            text-align: left;
+        }
+
+        .ana-icerik2 {
+            display: flex;
+            justify-content: center;
+            text-align: left;
+        }
+
+        .ana-icerik3 {
+            display: flex;
+            justify-content: center;
+            text-align: left;
+        }
+
+
+        #card6:hover {
+            background: linear-gradient(90deg, rgb(208, 255, 219)0%, rgb(223, 248, 215) 0%, rgba(255, 255, 255, 1) 100%);
+        }
+
+        #card7:hover {
+            background: linear-gradient(90deg, rgb(227, 228, 252) 0%, rgba(240, 252, 232, 0.855) 0%, rgb(219, 221, 252) 100%);
+        }
+
+        #card8:hover {
+            background: linear-gradient(90deg, rgba(175, 180, 255, 1) 0%, rgba(231, 233, 255, 1) 0%, rgba(175, 180, 255, 1) 100%);
+        }
+
+
+
+
+
+
+        #card9:hover {
+            background: linear-gradient(90deg, rgb(208, 255, 219)0%, rgb(223, 248, 215) 0%, rgba(255, 255, 255, 1) 100%);
+        }
+
+        #card10:hover {
+            background: linear-gradient(90deg, rgb(227, 228, 252) 0%, rgba(240, 252, 232, 0.855) 0%, rgb(219, 221, 252) 100%);
+        }
+
+        #card11:hover {
+            background: linear-gradient(90deg, rgba(175, 180, 255, 1) 0%, rgba(231, 233, 255, 1) 0%, rgba(175, 180, 255, 1) 100%);
+        }
+
+
+        #card12:hover {
+            background: linear-gradient(90deg, rgb(208, 255, 219)0%, rgb(223, 248, 215) 0%, rgba(255, 255, 255, 1) 100%);
+        }
+
+        #card13:hover {
+            background: linear-gradient(90deg, rgb(227, 228, 252) 0%, rgba(240, 252, 232, 0.855) 0%, rgb(219, 221, 252) 100%);
+        }
+
+        #card14:hover {
+            background: linear-gradient(90deg, rgba(175, 180, 255, 1) 0%, rgba(231, 233, 255, 1) 0%, rgba(175, 180, 255, 1) 100%);
+        }
+
+
+        #card15:hover {
+            background: linear-gradient(90deg, rgb(208, 255, 219)0%, rgb(223, 248, 215) 0%, rgba(255, 255, 255, 1) 100%);
+        }
+
+        #card16:hover {
+            background: linear-gradient(90deg, rgb(227, 228, 252) 0%, rgba(240, 252, 232, 0.855) 0%, rgb(219, 221, 252) 100%);
+        }
+
+        #card17:hover {
+            background: linear-gradient(90deg, rgba(175, 180, 255, 1) 0%, rgba(231, 233, 255, 1) 0%, rgba(175, 180, 255, 1) 100%);
+        }
+
+        #card18:hover {
+            background: linear-gradient(90deg, rgb(208, 255, 219)0%, rgb(223, 248, 215) 0%, rgba(255, 255, 255, 1) 100%);
+        }
+
+        #card19:hover {
+            background: linear-gradient(90deg, rgb(227, 228, 252) 0%, rgba(240, 252, 232, 0.855) 0%, rgb(219, 221, 252) 100%);
+        }
+
+        #card20:hover {
+            background: linear-gradient(90deg, rgba(175, 180, 255, 1) 0%, rgba(231, 233, 255, 1) 0%, rgba(175, 180, 255, 1) 100%);
+        }
+
+        #card21:hover {
+            background: linear-gradient(90deg, rgb(208, 255, 219)0%, rgb(223, 248, 215) 0%, rgba(255, 255, 255, 1) 100%);
+        }
+
+        #card22:hover {
+            background: linear-gradient(90deg, rgb(227, 228, 252) 0%, rgba(240, 252, 232, 0.855) 0%, rgb(219, 221, 252) 100%);
+        }
+
+        #card23:hover {
+            background: linear-gradient(90deg, rgba(175, 180, 255, 1) 0%, rgba(231, 233, 255, 1) 0%, rgba(175, 180, 255, 1) 100%);
+        }
+
+
+        #baslik3 {
+            text-align: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            font-size: 26px;
+            padding: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border: none;
+            width: 500px;
+            position: relative;
+            left: 700px;
+            border-radius: 5px;
+        }
+
+        #baslik4 {
+            text-align: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            font-size: 26px;
+            padding: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border: none;
+            width: 500px;
+            position: relative;
+            left: 700px;
+            border-radius: 5px;
+        }
+
+        #baslik5 {
+            text-align: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            font-size: 26px;
+            padding: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border: none;
+            width: 500px;
+            position: relative;
+            left: 700px;
+            border-radius: 5px;
+        }
+
+        #baslik6 {
+            text-align: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            font-size: 26px;
+            padding: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border: none;
+            width: 500px;
+            position: relative;
+            left: 700px;
+            border-radius: 5px;
+        }
+
+        #baslik7 {
+            text-align: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            font-size: 26px;
+            padding: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border: none;
+            width: 500px;
+            position: relative;
+            left: 700px;
+            border-radius: 5px;
+        }
+
+        #baslik8 {
+            text-align: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            font-size: 26px;
+            padding: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border: none;
+            width: 500px;
+            position: relative;
+            left: 700px;
+            border-radius: 5px;
+        }
+
+        #baslik9 {
+            text-align: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            font-size: 26px;
+            padding: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border: none;
+            width: 500px;
+            position: relative;
+            left: 700px;
+            border-radius: 5px;
+        }
+
+        .card-container {
+            margin-left: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="resim">
+            <img src="Logo.png">
+        </div>
+        <ul>
+            <li>
+                <a id="ilet" href="#iletisim"> İletisim</a>
+            </li>
+            <li>
+                <a id="favori" href="#baslik" style="margin-right: 20px;">Favoriler</a>
+            </li>
+            
+            <li>
+                <div class="dropdown">
+                    <a class="dil" href="# " style="margin-right: 20px;">Tr</a>
+                    <div class="dil-icerik">
+                        <a href="#">English</a>
+                        <a href="#">German</a>
+                        <a href="#">Italian</a>
+                        <a href="#">French</a>
+                        <a href="#">Portuguese</a>
+                        <a href="#">Spanish</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a id="giriskayit" href="giris.html" style="margin-right: 20px;">Giriş/Kayıt</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <h3 id="baslik">ÖNERİLEN SEÇİMLER</h3>
+    <div class="anadiv">
+        <div class="card-container">
+            <div class="card" id="card1">
+                <img id="Otel" src="Otel.png">
+                <p id="paragraf" style="font-weight: 600;">
+                    Antalya ilinde önerilen oteller için<br>
+                    <a style="font-size: medium; color: black;"
+                        href="https://www.trivago.com.tr/tr/odr/otel-antalya-t%C3%BCrkiye?search=200-15247"
+                        target="_blank">Tıklayınız</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card" id="card2">
+                <img id="Otel" src="Otel.png">
+                <p id="paragraf" style="font-weight: 600;">
+                    Ankara ilinde önerilen oteller için<br>
+                    <a style="font-size: medium ; color: black;" href="https://www.enuygun.com/otel/bolge/ankara-386/"
+                        target="_blank">Tıklayınız</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card" id="card3">
+                <img id="Otel" src="Otel.png">
+                <p id="paragraf" style="font-weight: 600;">
+                    İzmir ilinde önerilen oteller için<br>
+                    <a style="font-size: medium; color: black; " href="https://www.enuygun.com/otel/bolge/izmir-1665/"
+                        target="_blank">Tıklayınız</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card" id="card4">
+                <img id="Otel" src="Otel.png">
+                <p id="paragraf" style="font-weight: 600;">
+                    Eskişehir ilinde önerilen oteller için<br>
+                    <a style="font-size: medium; color: black; "
+                        href="https://www.enuygun.com/otel/bolge/eskisehir-7119/" target="_blank">Tıklayın</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card" id="card5">
+                <img id="Otel" src="Otel.png">
+                <p id="paragraf" style="font-weight: 600;">
+                    Muğla ilinde önerilen oteller için<br>
+                    <a style="font-size: medium; color: black; " href="https://www.enuygun.com/otel/bolge/mugla-4556/"
+                        target="_blank">Tıklayınız</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <h3 id="baslik2">İstediğiniz bölgeyi butonlardan seçebilirsiniz</h3>
+    <div class="icerik">
+        <div class="butonlar">
+            <a href="#baslik3"><button id="Antalya">Antalya Bölgesi</button></a>
+            <a href="#baslik4"><button id="Ankara">Ankara Bölgesi</button></a>
+            <a href="#baslik5"><button id="Muğla">Muğla Bölgesi</button></a>
+            <a href="#baslik6"><button id="Bursa">Bursa Bölgesi</button></a>
+            <a href="#baslik7"><button id="Eskişehir">Eskişehir Bölgesi</button></a>
+            <a href="#baslik8"><button id="İzmir">İzmir Bölgesi</button></a>
+            <a href="#baslik9"><button id="Trabzon">Trabzon Bölgesi</button></a>
+            <a href="#baslik10"><button id="İstanbul">İstanbul Bölgesi</button></a>
+        </div>
+    </div>
+    <div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <h3 id="baslik3">Antalya ilinde önerilen oteller</h3>
+    <div class="ana-icerik1">
+        <div class="card-container">
+            <div class="card" id="card6">
+                <img id="Otel" src="Otel.png">
+                <p id="paragraf" style="font-weight: 600;">
+                    Önerilen pahalı fiyatlı oteller için<br>
+                    <a style="font-size: medium; color: black; "
+                        href="https://www.trivago.com.tr/tr/srl/otel-antalya-t%C3%BCrkiye?search=200-15247;dr-20250606-20250608;pr-22914-2147483647;rc-1-2"
+                        target="_blank">Tıklayınız</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card" id="card7">
+                <img id="Otel" src="Otel.png">
+                <p id="paragraf" style="font-weight: 600;">
+                    Önerilen orta fiyatlı oteller için<br>
+                    <a style="font-size: medium; color: black; "
+                        href="https://www.trivago.com.tr/tr/srl/otel-antalya-t%C3%BCrkiye?search=200-15247;dr-20250606-20250608;pr-11457-22914;rc-1-2"
+                        target="_blank">Tıklayın</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card" id="card8">
+                <img id="Otel" src="Otel.png">
+                <p id="paragraf" style="font-weight: 600;">
+                    Önerilen ucuz fiyatlı oteller için<br>
+                    <a style="font-size: medium; color: black; "
+                        href="https://www.trivago.com.tr/tr/srl/otel-antalya-t%C3%BCrkiye?search=200-15247;dr-20250606-20250608;pr-0-9166;rc-1-2"
+                        target="_blank">Tıklayınız</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <h3 id="baslik4">Ankara ilinde önerilen oteller</h3>
+    <div class="ana-icerik2">
+        <div class="card-container">
+            <div class="card" id="card9">
+                <img id="Otel" src="Otel.png">
+                <p id="paragraf" style="font-weight: 600;">
+                    Önerilen pahalı fiyatlı oteller için<br>
+                    <a style="font-size: medium; color: black; "
+                        href="https://www.trivago.com.tr/tr/srl/otel-ankara-t%C3%BCrkiye?search=200-15245;dr-20250606-20250608;pr-23135-2147483647;rc-1-2"
+                        target="_blank">Tıklayınız</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card" id="card10">
+                <img id="Otel" src="Otel.png">
+                <p id="paragraf" style="font-weight: 600;">
+                    Önerilen orta fiyatlı oteller için<br>
+                    <a style="font-size: medium; color: black; "
+                        href="https://www.trivago.com.tr/tr/srl/otel-ankara-t%C3%BCrkiye?search=200-15245;dr-20250606-20250608;pr-11457-22914;rc-1-2"
+                        target="_blank">Tıklayın</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card" id="card11">
+                <img id="Otel" src="Otel.png">
+                <p id="paragraf" style="font-weight: 600;">
+                    Önerilen ucuz fiyatlı oteller için<br>
+                    <a style="font-size: medium; color: black; "
+                        href="https://www.trivago.com.tr/tr/srl/otel-ankara-t%C3%BCrkiye?search=200-15245;dr-20250606-20250608;pr-115-11457;rc-1-2 "
+                        target="_blank">Tıklayınız</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <h3 id="baslik5">Muğla ilinde önerilen oteller</h3>
+    <div class="ana-icerik3">
+        <div class="card-container">
+            <div class="card" id="card12">
+                <img id="Otel" src="Otel.png">
+                <p id="paragraf" style="font-weight: 600;">
+                    Önerilen pahalı fiyatlı oteller için<br>
+                    <a style="font-size: medium; color: black; "
+                        href="https://www.trivago.com.tr/tr/srl/otel-mu%C4%9Fla-t%C3%BCrkiye?search=200-15320;dr-20250606-20250608;pr-23281-2147483647;rc-1-2"
+                        target="_blank">Tıklayınız</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card" id="card13">
+                <img id="Otel" src="Otel.png">
+                <p id="paragraf" style="font-weight: 600;">
+                    Önerilen orta fiyatlı oteller için<br>
+                    <a style="font-size: medium; color: black; "
+                        href="https://www.trivago.com.tr/tr/srl/otel-mu%C4%9Fla-t%C3%BCrkiye?search=200-15320;dr-20250606-20250608;pr-11698-23578;rc-1-2"
+                        target="_blank">Tıklayın</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card" id="card14">
+                <img id="Otel" src="Otel.png">
+                <p id="paragraf" style="font-weight: 600;">
+                    Önerilen ucuz fiyatlı oteller için<br>
+                    <a style="font-size: medium; color: black; "
+                        href="https://www.trivago.com.tr/tr/srl/otel-mu%C4%9Fla-t%C3%BCrkiye?search=200-15320;dr-20250606-20250608;pr-0-12140;rc-1-2"
+                        target="_blank">Tıklayınız</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+    <h3 id="baslik6">Bursa ilinde önerilen oteller</h3>
+    <div class="ana-icerik3">
+        <div class="card-container">
+            <div class="card" id="card15">
+                <img id="Otel" src="Otel.png">
+                <p id="paragraf" style="font-weight: 600;">
+                    Önerilen pahalı fiyatlı oteller için<br>
+                    <a style="font-size: medium; color: black; "
+                        href="https://www.trivago.com.tr/tr/srl/otel-bursa-t%C3%BCrkiye?search=200-15263;dr-20250606-20250608;pr-23281-2147483647;rc-1-2"
+                        target="_blank">Tıklayınız</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card" id="card16">
+                <img id="Otel" src="Otel.png">
+                <p id="paragraf" style="font-weight: 600;">
+                    Önerilen orta fiyatlı oteller için<br>
+                    <a style="font-size: medium; color: black; "
+                        href="https://www.trivago.com.tr/tr/srl/otel-bursa-t%C3%BCrkiye?search=200-15263;dr-20250606-20250608;pr-11552-23281;rc-1-2"
+                        target="_blank">Tıklayın</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card" id="card17">
+                <img id="Otel" src="Otel.png">
+                <p id="paragraf" style="font-weight: 600;">
+                    Önerilen ucuz fiyatlı oteller için<br>
+                    <a style="font-size: medium; color: black; "
+                        href="https://www.trivago.com.tr/tr/srl/otel-bursa-t%C3%BCrkiye?search=200-15263;dr-20250606-20250608;pr-0-11552;rc-1-2"
+                        target="_blank">Tıklayınız</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+    <h3 id="baslik7">Eskişehir ilinde önerilen oteller</h3>
+    <div class="ana-icerik3">
+        <div class="card-container">
+            <div class="card" id="card18">
+                <img id="Otel" src="Otel.png">
+                <p id="paragraf" style="font-weight: 600;">
+                    Önerilen pahalı fiyatlı oteller için<br>
+                    <a style="font-size: medium; color: black; "
+                        href="https://www.trivago.com.tr/tr/srl/otel-eski%C5%9Fehir-t%C3%BCrkiye?search=200-15276;dr-20250606-20250608;pr-23135-2147483647;rc-1-2"
+                        target="_blank">Tıklayınız</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card" id="card19">
+                <img id="Otel" src="Otel.png">
+                <p id="paragraf" style="font-weight: 600;">
+                    Önerilen orta fiyatlı oteller için<br>
+                    <a style="font-size: medium; color: black; "
+                        href="https://www.trivago.com.tr/tr/srl/otel-eski%C5%9Fehir-t%C3%BCrkiye?search=200-15276;dr-20250606-20250608;pr-11698-23578;rc-1-2"
+                        target="_blank">Tıklayın</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card" id="card20">
+                <img id="Otel" src="Otel.png">
+                <p id="paragraf" style="font-weight: 600;">
+                    Önerilen ucuz fiyatlı oteller için<br>
+                    <a style="font-size: medium; color: black; "
+                        href="https://www.trivago.com.tr/tr/srl/otel-eski%C5%9Fehir-t%C3%BCrkiye?search=200-15276;dr-20250606-20250608;pr-0-11698;rc-1-2"
+                        target="_blank">Tıklayınız</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+    <h3 id="baslik8">Trabzon ilinde önerilen oteller</h3>
+    <div class="ana-icerik3">
+        <div class="card-container">
+            <div class="card" id="card21">
+                <img id="Otel" src="Otel.png">
+                <p id="paragraf" style="font-weight: 600;">
+                    Önerilen pahalı fiyatlı oteller için<br>
+                    <a style="font-size: medium; color: black; "
+                        href="https://www.trivago.com.tr/tr/srl/otel-trabzon-t%C3%BCrkiye?search=200-15342;dr-20250606-20250608;pr-23723-2147483647;rc-1-2"
+                        target="_blank">Tıklayınız</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card" id="card22">
+                <img id="Otel" src="Otel.png">
+                <p id="paragraf" style="font-weight: 600;">
+                    Önerilen orta fiyatlı oteller için<br>
+                    <a style="font-size: medium; color: black; "
+                        href="https://www.trivago.com.tr/tr/srl/otel-trabzon-t%C3%BCrkiye?search=200-15342;dr-20250606-20250608;pr-11552-23432;rc-1-2"
+                        target="_blank">Tıklayın</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card" id="card23">
+                <img id="Otel" src="Otel.png">
+                <p id="paragraf" style="font-weight: 600;">
+                    Önerilen ucuz fiyatlı oteller için<br>
+                    <a style="font-size: medium; color: black; "
+                        href="https://www.trivago.com.tr/tr/srl/otel-trabzon-t%C3%BCrkiye?search=200-15342;dr-20250606-20250608;pr-0-12286;rc-1-2"
+                        target="_blank">Tıklayınız</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+
+
+    <h3 id="baslik9">İstanbul ilinde önerilen oteller</h3>
+    <div class="ana-icerik3">
+        <div class="card-container">
+            <div class="card" id="card21">
+                <img id="Otel" src="Otel.png">
+                <p id="paragraf" style="font-weight: 600;">
+                    Önerilen pahalı fiyatlı oteller için<br>
+                    <a style="font-size: medium; color: black; "
+                        href="https://www.trivago.com.tr/tr/srl/otel-i-stanbul-t%C3%BCrkiye?search=200-15288;dr-20250606-20250608;pr-23432-2147483647;rc-1-2"
+                        target="_blank">Tıklayınız</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card" id="card22">
+                <img id="Otel" src="Otel.png">
+                <p id="paragraf" style="font-weight: 600;">
+                    Önerilen orta fiyatlı oteller için<br>
+                    <a style="font-size: medium; color: black; "
+                        href="https://www.trivago.com.tr/tr/srl/otel-i-stanbul-t%C3%BCrkiye?search=200-15288;dr-20250606-20250608;pr-11994-23281;rc-1-2"
+                        target="_blank">Tıklayın</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card" id="card23">
+                <img id="Otel" src="Otel.png">
+                <p id="paragraf" style="font-weight: 600;">
+                    Önerilen ucuz fiyatlı oteller için<br>
+                    <a style="font-size: medium; color: black; "
+                        href="https://www.trivago.com.tr/tr/srl/otel-i-stanbul-t%C3%BCrkiye?search=200-15288;dr-20250606-20250608;pr-0-11552;rc-1-2"
+                        target="_blank">Tıklayınız</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </div>
+    <footer id="iletisim">
+        <p>📧E-mail : DaysTurizm@gmail.com</p>
+        <p id="phone">📱Phone : 0545 343 34 34</p>
+        <p id="sirket">🌐DAY Turizm LTD. STİ.</p>
+    </footer>
+</body>
+
+</html>

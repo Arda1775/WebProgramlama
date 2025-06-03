@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Kayıt </title>
+    <style>
+        .Container-Box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 10%;
+
+        }
+
+        form {
+            border: 1px solid #434383;
+            height: 300px;
+            width: 400px;
+            background-color: #434383;
+            color: rgb(255, 255, 255);
+            font-size: large;
+            font-weight: bold;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            padding: 20px;
+            border-radius: 24px;
+            box-shadow: 2px 3px 5px black;
+            padding-bottom: 60px;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            justify-content: center;
+            align-items: left;
+            text-align: left;
+        }
+        h1{
+            text-align: center;
+
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 6px 4px 2px #02020233;
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+
+        input :hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 15px #0000004d;
+        }
+
+        input::placeholder {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        label {
+            margin-bottom: 5px;
+            width: 200px;
+        }
+
+        #Giris {
+            background: linear-gradient(to right, #ec950059, #ff0303);
+            color: white;
+            position: relative;
+            left: 0px;
+            top: 10px;
+            padding: 13px 25px;
+            border-radius: 12px;
+            margin-top: 3px;
+            font-size: inherit;
+            cursor: pointer;
+            font-family: sans-serif;
+            text-decoration: none;
+            border: 2px solid black;
+
+        }
+
+        #Giris:hover {
+            box-shadow: 2px 4px 10px rgba(0, 1, 1);
+            transition: 0.3s ease;
+        }
+
+        #kayit {
+            background: linear-gradient(to right, #ec950059, #ff0303);
+            color: white;
+            position: relative;
+            left: 0px;
+            top: 45px;
+            bottom: -33px;
+            padding: 13px 25px;
+            border-radius: 12px;
+            margin-top: 30px;
+            cursor: pointer;
+            font-family: sans-serif;
+            text-decoration: none;
+            border: 2px solid black;
+        }
+
+        #kayit:hover {
+            box-shadow: 2px 4px 10px rgba(0, 1, 1);
+            transition: 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Container-Box">
+        <form action="#">
+            <h1 >Giriş Yapınız</h1>
+            <div class="form-group">
+                <label for="UsarName">
+                    İsim
+                </label>
+                <input type="text" id="UsarName" placeholder="İsminizi giriniz" required>
+            </div>
+            <div class="form-group">
+                <label for="Password">
+                    Şifre
+                </label>
+                <input type="password" id="Password" placeholder="Şifrenizi Giriniz" required>
+            </div>
+            <div class="form-group">
+                <a id="Giris" href="index.html">Giriş Yap</a>
+                <br>
+                <a id="kayit" href="kayit.html">Kayıt Ol</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+body {
+    background-color: rgb(20, 16, 16);
+    font-family: sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+img {
+    position: absolute;
+    top: 25px;
+    left: 50px;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+input {
+    border: 1px solid gray;
+    border-radius: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 10px;
+    width: 450px;
+    margin-top: 15px;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    font-weight: bolder;
+}
+
+button {
+    padding: 13px;
+    width: 50px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(48, 48, 48);
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.card {
+    position: absolute;
+    top: 150px;
+    color: white;
+}
+
+#Video1 {
+    border-radius: 10px;
+    border: none;
+}
+
+#yazi1 {
+    position: relative;
+    right: -600px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: medium;
+}
+#bilgi{
+    color: gray;
+}
+#bilgi2{
+    color: gray;
+    position: relative;
+    right: -600px;
+    text-decoration: none;
+    font-size: medium;
+}
+
+#Alper a {
+    position: relative;
+    right: -600px;
+    color:gray;
+    text-decoration: none;
+    font-size: medium;
+}
+.card2 {
+    position: absolute;
+    top: 430px;
+    color: white;
+}
+.card3 {
+    position: absolute;
+    top: 730px;
+    color: white;
+}
